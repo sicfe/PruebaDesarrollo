@@ -1,4 +1,4 @@
-# PruebaDesarrollo
+# Ejercicio de Programación
 
 1. Clona el repositorio y abre el proyecto en Visual Studio
 2. Revisa el archivo Program.cs para entender el flujo de la aplicación.
