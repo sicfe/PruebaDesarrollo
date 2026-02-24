@@ -10,9 +10,9 @@ namespace PruebaDesarrollo
     {
         // Completa este método para calcular el monto total facturado y el monto total de impuestos para cada RUC.
         // Cada linea tiene el siguiente formato: RUC, MontoFacturado, Impuesto
-        public Dictionary<string, Tuple<decimal, decimal>> CalcularTotales(string[] lineas)
+        public Dictionary<string, (decimal MontoFacturado, decimal Impuesto)> CalcularTotales(string[] lineas)
         {
-            Dictionary<string, Tuple<decimal, decimal>> totales = new Dictionary<string, Tuple<decimal, decimal>>();
+            Dictionary<string, (decimal MontoFacturado, decimal Impuesto)> totales = new Dictionary<string, (decimal MontoFacturado, decimal Impuesto)>();
 
             //Escribe tu código aqui
 

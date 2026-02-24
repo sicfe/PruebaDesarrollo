@@ -14,7 +14,7 @@ class Program
             Console.WriteLine("Montos Totales Facturados y de Impuestos:");
             foreach (var total in totales)
             {
-                Console.WriteLine($"{total.Key}: Total Facturado = {total.Value.Item1}, Total Impuesto = {total.Value.Item2}");
+                Console.WriteLine($"{total.Key}: Total Facturado = {total.Value.MontoFacturado}, Total Impuesto = {total.Value.Impuesto}");
             }
         }
         else
