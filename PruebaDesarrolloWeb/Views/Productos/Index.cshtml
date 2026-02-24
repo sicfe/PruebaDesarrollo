@@ -1,0 +1,90 @@
+@{
+    ViewData["Title"] = "Gestión de Productos";
+}
+
+<link rel="stylesheet" href="~/css/productos.css" asp-append-version="true" />
+
+<h2 class="mb-4">Gestión de Inventario de Productos</h2>
+
+<!-- Filtro de búsqueda -->
+<div class="mb-3">
+    <input type="text" id="filtro" class="form-control"
+           placeholder="Buscar producto por nombre..."
+           onkeyup="filtrarProductos()" />
+</div>
+
+<!-- Formulario para agregar producto -->
+<div class="card mb-4">
+    <div class="card-header">
+        <strong>Agregar Nuevo Producto</strong>
+    </div>
+    <div class="card-body">
+        <div class="row g-3">
+
+            <div class="col-md-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre del producto" />
+            </div>
+
+            <div class="col-md-2">
+                <label for="precio" class="form-label">Precio ($)</label>
+                <!--
+                    TODO 1 (HTML): El atributo type está incompleto.
+                    Reemplaza "___" con el tipo de input correcto para números con decimales.
+                -->
+                <input type="___" id="precio" class="form-control" placeholder="0.00" step="0.01" min="0" />
+            </div>
+
+            <div class="col-md-2">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <!--
+                    TODO 2 (HTML): Falta el input para Cantidad.
+                    Agregar un <input> con: type="number", id="cantidad",
+                    class="form-control", placeholder="0", min="0"
+                -->
+            </div>
+
+            <div class="col-md-3">
+                <label for="estado" class="form-label">Estado</label>
+                <!--
+                    TODO 3 (HTML): Al <select> le falta el atributo id.
+                    Agregar id="estado" para que el JavaScript pueda leerlo.
+                -->
+                <select class="form-select">
+                    <option value="En Stock">En Stock</option>
+                    <option value="Agotado">Agotado</option>
+                </select>
+            </div>
+
+            <div class="col-md-2 d-flex align-items-end">
+                <button class="btn btn-primary w-100" onclick="agregarProducto()">Agregar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Tabla de productos -->
+<table class="table table-bordered" id="tabla-productos">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <!--
+                TODO 4 (HTML): Faltan 3 columnas en el encabezado.
+                Agregar los <th> para: Precio ($), Cantidad, Estado
+            -->
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="cuerpo-tabla">
+    </tbody>
+</table>
+
+<!-- Total del inventario -->
+<div class="total-inventario mt-3">
+    <strong>Valor Total del Inventario: <span id="total-valor">$ 0.00</span></strong>
+</div>
+
+@section Scripts {
+    <script src="~/js/productos.js" asp-append-version="true"></script>
+}

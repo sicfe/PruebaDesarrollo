@@ -1,0 +1,53 @@
+/* ===================================================
+   DESAFIO CSS - Gestión de Inventario de Productos
+   =================================================== */
+
+/* --- Estilos base ya completados --- */
+
+.card-header {
+    background-color: #343a40;
+    color: white;
+}
+
+table th,
+table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+   TODO 1 (CSS): Efecto hover sobre las filas de la tabla.
+   Al pasar el cursor por una fila del tbody, el fondo
+   debe cambiar a gris claro (#f5f5f5).
+   Pista: selector  tbody tr:hover
+--------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+   TODO 2 (CSS): Estilo para productos "En Stock".
+   - Color del texto: verde  (#198754)
+   - Texto en negrita
+--------------------------------------------------- */
+.estado-en-stock {
+
+}
+
+/* ---------------------------------------------------
+   TODO 3 (CSS): Estilo para productos "Agotado".
+   - Color del texto: rojo  (#dc3545)
+   - Texto en negrita
+--------------------------------------------------- */
+.estado-agotado {
+
+}
+
+/* ---------------------------------------------------
+   TODO 4 (CSS): Estilo para el bloque del total del inventario.
+   - Fondo azul claro: #cfe2ff
+   - Padding: 15px
+   - Bordes redondeados: 8px
+   - Borde sólido de 1px color #084298
+--------------------------------------------------- */
+.total-inventario {
+
+}
